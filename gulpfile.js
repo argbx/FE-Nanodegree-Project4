@@ -3,7 +3,20 @@ var gulp = require('gulp')
     concat = require('gulp-concat')
     imagemin = require('gulp-imagemin')
     uglify = require('gulp-uglify')
+    minifyhtml = require('gulp-minify-html')
 
+
+gulp.task('minify-html',function(){
+
+	var opts = {
+		conditionals: true,
+		spare: true
+	};
+
+	return gulp.src('views/*.html')
+		.pipe(minifyhtml(opts))
+    	.pipe(gulp.dest('views/dist/'));
+})
 
 
   gulp.task('scripts',function(){
@@ -14,7 +27,6 @@ var gulp = require('gulp')
 
   gulp.task('css', function() {
   return gulp.src('views/css/*.css')
-    .pipe(concat('site.css'))
     .pipe(minifycss())
     .pipe(gulp.dest('views/dist/css'))
 })
