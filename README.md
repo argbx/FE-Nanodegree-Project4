@@ -8,7 +8,7 @@ Page Scored over 90 for both Mobile and Desktop Versions
 
 ### Part 2:
 
-*Added use strict on all the functions
+* Added use strict on all the functions
 * Changed all the querySelector calls to getElementById() Web API call for faster load
 * Updated changePizzaSizes to put the .length in a variable for effciency
 * Updated changePizzaSizes, removed dx and newwidth outside the loop

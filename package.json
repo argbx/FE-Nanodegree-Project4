@@ -1,0 +1,29 @@
+{
+  "name": "fe-nanodegree-project4",
+  "version": "1.0.0",
+  "description": "####Part 1:",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argbx/FE-Nanodegree-Project4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/argbx/FE-Nanodegree-Project4/issues"
+  },
+  "homepage": "https://github.com/argbx/FE-Nanodegree-Project4#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify": "0.0.5",
+    "gulp-uglify": "^1.5.1"
+  }
+}
