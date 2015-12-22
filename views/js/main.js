@@ -487,17 +487,20 @@ var resizePizzas = function(size) {
 
     function changePizzaSizes(size) {
         // saved array length as a variable so that the lenght property is not accessed during the iteration. levent-20151221 
-        var container = document.getElementById('randomPizzaContainer');
-        var dx = determineDx(container[0], size);
-        var newwidth = (container[0].offsetWidth + dx) + 'px';
-        var containerLength = container.length
+        // moved dx and newwidth out of the loop assisning them the value of item 0 since they are fixed levent-20151222
+        // using getElementsbyClassname instead of queryselector all levent-20151222
+        var dx  = determineDx(document.getElementsByClassName("randomPizzaContainer")[0], size);
+        var newwidth = (document.getElementsByClassName("randomPizzaContainer")[0].offsetWidth + dx) + 'px';
+        console.log(newwidth);
+        var containerLength = document.getElementsByClassName("randomPizzaContainer").length;
 
         for (var i = 0; i < containerLength; i++) {
-            // var newwidth = (container[i].offsetWidth + dx) + 'px';
-            container[i].style.width = newwidth;
+
+                document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
 
         }
     }
+
     changePizzaSizes(size);
 
     // User Timing API is awesome

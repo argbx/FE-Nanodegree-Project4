@@ -16,3 +16,5 @@ Page Scored over 90 for both Mobile and Desktop Versions
 * Update postions, created itemslength variable, and moved phase variable outside the loop
 * Used screen size to calculate total number of pizzas
 * Declared elem outside the addeventListener loop
+* Moved dx and newwidth out of the loop assisning them the value of item 0 since they are fixed levent-20151222
+* using getElementsbyClassname instead of queryselector all levent-20151222
